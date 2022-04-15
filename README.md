@@ -1,34 +1,93 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# SMISplan (+ TypeScript + NextJS)
+[SMISplan](https://ilyasy.github.io/smisplan-typescript-next/)
 
-## Getting Started
+## Что это ?
+SMISplan - стандартный трекер задач (issue tracker), сделанный для внутренней работы. Данная версия является
+адаптацией закрытого репозитория для просмотра, а также с имитацией (вместо оригинального: Perl + MySQL) backend.
 
-First, run the development server:
+Архитектура полностью изменена. Проект переписан с использованием TypeScript и перенесён на NextJS
 
-```bash
-npm run dev
-# or
-yarn dev
+## Основные возможности
+* Добавление, редактирование, удаление данных
+
+* Добавление связанных данных (например, совещание по задаче)
+
+* Показ связанных данных (например, проведённых совещаний по задаче)
+
+* Сортировка
+
+* Фильтрация
+
+* Меню действий
+
+* Строки с "редактируемыми" данными
+
+* Изменение  отображаемых столбцов
+
+* Просмотр совещаний (событий) в календаре
+
+* Просмотр истории изменений (лог событий)
+
+* Экспорт в PDF
+
+* Оповещение (требуется полноценный API)
+
+## Основные технологии
+* React
+
+* Redux (+ Thunk)
+
+* Javascript
+
+* TypeScript
+
+* NextJS
+
+* Jest (+ React Testing Library)
+
+* HTML5
+
+* CSS3
+
+* Ant Design ~~Material UI~~
+
+* Axios
+
+* Axios-mock-adapter (для имитации API)
+
+* REST API
+
+* Lazy Loading компоненты
+
+## ToDo
+- [ ] Переписать с использованием NextJS
+
+- [ ] Адаптив
+
+## Просмотр
+
+* Клонировать репозиторий
+```
+git clone https://github.com/ilyaSy/smisplan-typescript-next.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+* Установить зависимости
+```
+npm install
+```
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+* Запустить
+```
+npm run dev
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+* Для запуска тестов
+```
+npm run test
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+* Готовый результат на gh pages
+<br>[SMISplan](https://ilyasy.github.io/smisplan-typescript-next/)
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+-----
+**Автор: Сычугов Илья / Sychugov Ilya**
