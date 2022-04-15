@@ -1,0 +1,233 @@
+[
+  {
+    "isInlineEditable": false,
+    "showInTable": true,
+    "isEditable": true,
+    "title": "Приоритет",
+    "validValues": [
+      {
+        "text": "Низкий",
+        "value": "simple"
+      },
+      {
+        "text": "Средний",
+        "value": "medium"
+      },
+      {
+        "text": "Высокий",
+        "value": "hard"
+      }
+    ],
+    "isFilter": true,
+    "isTagged": false,
+    "hasFullTextLink": false,
+    "showInTableMobile": false,
+    "tableIndex": 6,
+    "id": "priority",
+    "type": "select",
+    "defaultValue": "simple"
+  },
+  {
+    "isInlineEditable": false,
+    "showInTable": true,
+    "isEditable": true,
+    "title": "Статус",
+    "validValues": [
+      {
+        "text": "Новая",
+        "value": "new",
+        "tag": "gold"
+      },
+      {
+        "text": "Принята",
+        "value": "accepted",
+        "tag": "blue"
+      },
+      {
+        "text": "В работе",
+        "value": "work",
+        "tag": "geekblue"
+      },
+      {
+        "text": "Выполнена",
+        "value": "done",
+        "tag": "green"
+      },
+      {
+        "text": "Отложена",
+        "value": "postponed",
+        "tag": "magenta"
+      }
+    ],
+    "isFilter": true,
+    "isTagged": true,
+    "hasFullTextLink": false,
+    "showInTableMobile": false,
+    "tableIndex": 7,
+    "id": "status",
+    "type": "select",
+    "defaultValue": "new"
+  },
+  {
+    "id": "project",
+    "title": "Проект",
+    "type": "select",
+    "tableIndex": 2,
+    "showInTable": true,
+    "validValues": {
+      "getDataUrl": "/smisplan-typescript/cgi/project/"
+    },
+    "isEditable": true,
+    "isInlineEditable": false,
+    "isFilter": true,
+    "isTagged": false,
+    "hasFullTextLink": false,
+    "isGroup": true,
+    "defaultValue": "otdel"
+  },
+  {
+    "isInlineEditable": false,
+    "showInTable": true,
+    "isEditable": true,
+    "title": "Срок",
+    "validValues": "",
+    "isFilter": true,
+    "isTagged": false,
+    "hasFullTextLink": false,
+    "tableIndex": 10,
+    "id": "dateEnd",
+    "type": "date",
+    "defaultValue": ""
+  },
+  {
+    "isInlineEditable": false,
+    "showInTable": false,
+    "isEditable": true,
+    "title": "Описание",
+    "validValues": "",
+    "isFilter": false,
+    "isTagged": false,
+    "hasFullTextLink": false,
+    "tableIndex": 4,
+    "id": "description",
+    "type": "fulltext",
+    "defaultValue": ""
+  },
+  {
+    "isInlineEditable": false,
+    "showInTable": true,
+    "isEditable": true,
+    "title": "Ответственный",
+    "validValues": {
+      "getDataUrl": "/smisplan-typescript/cgi/developer/"
+    },
+    "isFilter": true,
+    "isTagged": false,
+    "hasFullTextLink": false,
+    "isGroup": true,
+    "addMenuIndex": true,
+    "tableIndex": 8,
+    "id": "developer",
+    "type": "select",
+    "defaultValue": ""
+  },
+  {
+    "isInlineEditable": false,
+    "showInTable": true,
+    "isEditable": true,
+    "title": "Критический",
+    "validValues": [
+      {
+        "text": "Да",
+        "value": true,
+        "tag": "red"
+      },
+      {
+        "text": "Нет",
+        "value": false,
+        "tag": "white"
+      }
+    ],
+    "isFilter": true,
+    "isTagged": true,
+    "hasFullTextLink": false,
+    "isGroup": false,
+    "tableIndex": 10,
+    "id": "critical",
+    "type": "checkbox",
+    "defaultValue": false
+  },
+  {
+    "isInlineEditable": false,
+    "showInTable": false,
+    "isEditable": true,
+    "title": "Начало работы",
+    "validValues": "",
+    "isFilter": true,
+    "isTagged": false,
+    "hasFullTextLink": false,
+    "tableIndex": 9,
+    "id": "dateStart",
+    "type": "date",
+    "defaultValue": "date"
+  },
+  {
+    "isInlineEditable": true,
+    "showInTable": true,
+    "isEditable": true,
+    "title": "Название",
+    "validValues": "",
+    "isFilter": false,
+    "isTagged": false,
+    "hasFullTextLink": true,
+    "addMenuIndex": "1",
+    "tableIndex": 3,
+    "id": "title",
+    "type": "string",
+    "defaultValue": ""
+  },
+  {
+    "isInlineEditable": false,
+    "showInTable": true,
+    "isEditable": false,
+    "title": "ID",
+    "validValues": "",
+    "isFilter": false,
+    "isTagged": false,
+    "hasFullTextLink": false,
+    "tableIndex": 1,
+    "id": "id",
+    "type": "number",
+    "defaultValue": ""
+  },
+  {
+    "isInlineEditable": false,
+    "showInTable": false,
+    "isEditable": true,
+    "title": "Результат",
+    "validValues": "",
+    "isFilter": false,
+    "isTagged": false,
+    "tableIndex": 5,
+    "id": "result",
+    "type": "string",
+    "defaultValue": ""
+  },
+  {
+    "id": "specificParameters",
+    "mainValue": "title",
+    "tableName": "Задачи",
+    "defaultSortField": "id",
+    "defaultSortDirection": "descend",
+    "addMenuTitle": "Новая задача",
+    "hasTitleRow": false,
+    "hasAddMenu": true,
+    "hasSublistData": false,
+    "hasActionMenu": true,
+    "hasEditMenu": true,
+    "hasDeleteButton": true,
+    "hasSetStatusMenu": true,
+    "hasGoToDiscussion": true,
+    "hasDiscussion": true
+  }
+]
