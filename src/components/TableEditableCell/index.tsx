@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef, useContext } from 'react';
-import { Input } from 'antd';
 import { useDispatch } from 'react-redux';
 import { EditableContext } from '../UI/TableEditableRow';
 import { convertDataItem } from '../../utils/convertDataItem';
@@ -40,7 +39,8 @@ const DataTableEditableCell: React.FC<EditableCellProps> = ({
   const tablename = useGetTablename();
 
   const [editing, setEditing] = useState(false);
-  const inputRef = useRef<Input>(null);
+  // const inputRef = useRef<Input>(null);
+  const inputRef = useRef<HTMLInputElement>(null);
   const form = useContext(EditableContext)!;
 
   const dispatch = useDispatch();
@@ -70,18 +70,21 @@ const DataTableEditableCell: React.FC<EditableCellProps> = ({
     }
   };
 
-  return <TableEditableCell
-    title={title}
-    editing={editing}
-    editable={editable}
-    children={children}
-    dataIndex={dataIndex}
-    record={record}
-    handleSave={save}
-    handleToggleEdit={handleToggleEdit}
-    inputRef={inputRef}
-    {...restProps}
-  />
+  return (
+    <TableEditableCell
+      title={title}
+      editing={editing}
+      editable={editable}
+      dataIndex={dataIndex}
+      record={record}
+      handleSave={save}
+      handleToggleEdit={handleToggleEdit}
+      inputRef={inputRef}
+      {...restProps}
+    >
+      { children }
+      </TableEditableCell>
+  )
 };
 
 export default DataTableEditableCell;

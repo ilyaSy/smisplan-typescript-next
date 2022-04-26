@@ -11,6 +11,7 @@
 body {
   margin: 0;
   font-family: 'OpenSans', 'Roboto';
+  font-display: fallback;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

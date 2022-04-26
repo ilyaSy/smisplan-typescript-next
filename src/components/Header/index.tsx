@@ -15,7 +15,7 @@ const Header: React.FC = () => {
     <header className={classes.header}>
       <nav className={classes.navigation}>
         <Menu
-          selectedKeys={[mode]}
+          selectedKeys={[ mode ]}
           mode='horizontal'
           theme='dark'
         >
