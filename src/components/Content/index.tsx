@@ -1,6 +1,7 @@
-// import { Suspense, lazy, useEffect } from 'react';
-// import { Routes, Route, useLocation, useNavigate } from 'react-router-dom';
+// import { Suspense, lazy } from 'react';
 // import SuspenseFallback from '../UI/SuspenseFallback';
+import { useRouter } from "next/router";
+// import DataCalendar from "../DataCalendar";
 import DataTable from '../DataTable';
 import Sidebar from '../Sidebar';
 import classes from './Content.module.scss';
@@ -9,27 +10,15 @@ import classes from './Content.module.scss';
 // const DataCalendar = lazy(() => import('../DataCalendar'));
 
 const Content: React.FC = () => {
+  const router = useRouter();
+
   return (
     <main className={classes.content}>
       <Sidebar />
       <DataTable />
-      {/* <Routes >
-        <Route path="calendar"
-          element={
-            <Suspense fallback={<SuspenseFallback type="loading" />}>
-              <DataCalendar mode='discussion'/>
-            </Suspense>
-          }
-        />
-
-        <Route path="*"
-          element={
-            <Suspense fallback={<SuspenseFallback type="loading" />}>
-              <DataTable />
-            </Suspense>
-          }
-        />
-      </Routes > */}
+      {/* {
+        router.route === '/calendar' ? <DataCalendar mode='discussion'/> : <DataTable />
+      } */}
     </main>
   );
 }
