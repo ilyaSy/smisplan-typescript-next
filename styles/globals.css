@@ -29,6 +29,11 @@ code {
 @import "../node_modules/antd/dist/antd.css";
 
 /* CUSTOM STYLES */
+/*
 @import "../src/components/UI/Calendar/Calendar.css";
 @import "../src/components/UI/DropdownMenu/DropdownMenu.css";
 @import "../src/components/UI/Table/Table.css";
+*/
+@import "./UI/Calendar.css";
+@import "./UI/DropdownMenu.css";
+@import "./UI/Table.css";

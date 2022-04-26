@@ -1,4 +1,4 @@
-import React, { RefObject, useCallback, useContext, useMemo, useState } from "react";
+import React, { useCallback, useContext, useMemo, useState } from "react";
 import { IChildren } from "../types/IChildren";
 
 export type TPrintMode = 'print' | 'all' | 'current' | undefined;
