@@ -1,17 +1,12 @@
-// import { Suspense, lazy } from 'react';
-// import SuspenseFallback from '../UI/SuspenseFallback';
-import { useRouter } from "next/router";
+// import { useRouter } from "next/router";
 // import DataCalendar from "../DataCalendar";
 import DataTable from '../DataTable';
 import Sidebar from '../Sidebar';
 import classes from './Content.module.scss';
 
-// const DataTable = lazy(() => import('../DataTable'));
-// const DataCalendar = lazy(() => import('../DataCalendar'));
-
 const Content: React.FC = () => {
-  const router = useRouter();
-
+  // const router = useRouter();
+  // remove Calendar because of conflicts in @fullcalendar
   return (
     <main className={classes.content}>
       <Sidebar />

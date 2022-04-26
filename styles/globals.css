@@ -32,3 +32,4 @@ code {
 @import "./UI/Calendar.css";
 @import "./UI/DropdownMenu.css";
 @import "./UI/Table.css";
+/* @import "../node_modules/@fullcalendar/common/main.css"; */

@@ -9,7 +9,6 @@ const DiscussionPage: NextPage = () => {
   return (
     <ContextProvider>
       <StorageProvider>
-
         <div className={classes.main}>
           <Header />
           <Content />

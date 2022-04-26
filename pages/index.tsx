@@ -6,8 +6,8 @@ const Home: NextPage = () => {
   const router = useRouter();
 
   useEffect(() => {
-    router.push('/task');
-  }, [router]);
+    if (router.route === '/') router.push('/task');
+  }, [ router, router.route ]);
 
   return <></>;
 }

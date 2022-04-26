@@ -9,7 +9,6 @@ const EventPage: NextPage = () => {
   return (
     <ContextProvider>
       <StorageProvider>
-
         <div className={classes.main}>
           <Header />
           <Content />

@@ -9,7 +9,6 @@ const TaskPage: NextPage = () => {
   return (
     <ContextProvider>
       <StorageProvider>
-
         <div className={classes.main}>
           <Header />
           <Content />

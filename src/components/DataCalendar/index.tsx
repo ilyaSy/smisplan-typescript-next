@@ -1,3 +1,4 @@
+import { NextPage } from 'next';
 import React, { useEffect, useState } from 'react';
 import moment from 'moment';
 import 'moment/locale/ru';
@@ -9,8 +10,8 @@ import { useGetDataMeta } from '../../utils/hooks/useGetDataMeta';
 import sortData from '../../utils/sortData';
 import { TData } from '../../types/TData';
 import { DATE_FORMAT_DATE, DATE_FORMAT_FULLDATE, DATE_FORMAT_TIME } from '../../constants/constants';
-import classes from './DataCalendar.module.scss';
 import ModalWithList from '../UI/ModalWithList';
+import classes from './DataCalendar.module.scss';
 
 moment.locale('ru');
 
@@ -18,7 +19,7 @@ interface IDataCalendar {
   mode: string,
 }
 
-const DataCalendar: React.FC<IDataCalendar> = ({ mode }) => {
+const DataCalendar: NextPage<IDataCalendar> = ({ mode }) => {
   const [dates, setDates] = useState<TData[]>([]);
   const {
     data, isErrorData, isLoadingData,
