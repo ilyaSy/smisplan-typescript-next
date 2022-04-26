@@ -9,22 +9,21 @@ import classes from '../../src/App.module.scss';
 
 const TaskPage: NextPage = () => {
   return (
-    // <BrowserRouter basename={basename}>
-      <UserContextProvider>
-        <DictionaryContextProvider>
-          <StorageProvider>
-            <PrintPDFContextProvider>
+    <UserContextProvider>
+      <DictionaryContextProvider>
+        <StorageProvider>
+          <PrintPDFContextProvider>
 
-              <div className={classes.main}>
-                <Header />
-                <Content />
-              </div>
+            <div className={classes.main}>
+              <Header />
+              <Content />
+            </div>
 
-            </PrintPDFContextProvider>
-          </StorageProvider>
-        </DictionaryContextProvider>
-      </UserContextProvider>
-    // </BrowserRouter>
+          </PrintPDFContextProvider>
+        </StorageProvider>
+      </DictionaryContextProvider>
+    </UserContextProvider>
+
     // <div className={styles.container}>
     //   <Head>
     //     <title>Create Next App</title>

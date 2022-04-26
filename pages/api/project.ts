@@ -4,7 +4,7 @@ type Data = {
   [k: string]: any
 }
 
-const data = require('./dummyData/project');
+const data = require('./dummyData/projects.json');
 
 export default function handler(
   req: NextApiRequest,

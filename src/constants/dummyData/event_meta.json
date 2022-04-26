@@ -56,7 +56,7 @@
     "isInlineEditable": false,
     "isEditable": false,
     "validValues": {
-      "getDataUrl": "/smisplan-typescript/cgi/developer/"
+      "getDataUrl": "/api/developer/"
     },
     "title": "Ответственный",
     "isFilter": false,
@@ -119,7 +119,7 @@
     "isInlineEditable": false,
     "isEditable": false,
     "validValues": {
-      "getDataUrl": "/smisplan-typescript/cgi/project/"
+      "getDataUrl": "/api/project/"
     },
     "title": "Проект",
     "isFilter": false,

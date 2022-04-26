@@ -75,7 +75,7 @@
     "tableIndex": 2,
     "showInTable": true,
     "validValues": {
-      "getDataUrl": "/smisplan-typescript/cgi/project/"
+      "getDataUrl": "/api/project/"
     },
     "isEditable": true,
     "isInlineEditable": false,
@@ -119,7 +119,7 @@
     "isEditable": true,
     "title": "Ответственный",
     "validValues": {
-      "getDataUrl": "/smisplan-typescript/cgi/developer/"
+      "getDataUrl": "/api/developer/"
     },
     "isFilter": true,
     "isTagged": false,

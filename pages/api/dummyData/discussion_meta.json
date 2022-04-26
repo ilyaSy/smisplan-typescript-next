@@ -87,7 +87,7 @@
     "initialValue": "object:data,field:developer",
     "title": "Участники",
     "validValues": {
-      "getDataUrl": "/smisplan-typescript/cgi/developer/"
+      "getDataUrl": "/api/developer/"
     },
     "isFilter": true,
     "isTagged": false,
@@ -133,7 +133,7 @@
     "isEditable": true,
     "title": "Ответственный",
     "validValues": {
-      "getDataUrl": "/smisplan-typescript/cgi/developer/"
+      "getDataUrl": "/api/developer/"
     },
     "isFilter": true,
     "isTagged": false,

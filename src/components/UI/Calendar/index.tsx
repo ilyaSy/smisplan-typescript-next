@@ -3,7 +3,6 @@ import dayGridPlugin from '@fullcalendar/daygrid';
 import timeGridPlugin from '@fullcalendar/timegrid';
 import listPlugin from '@fullcalendar/list';
 import interactionPlugin from '@fullcalendar/interaction';
-import './Calendar.css';
 
 const calendarModes = { today: 'Сегодня', month: 'Месяц', week: 'Неделя', day: 'День', list: 'Список' };
 

@@ -9,13 +9,6 @@ import classes from './Content.module.scss';
 // const DataCalendar = lazy(() => import('../DataCalendar'));
 
 const Content: React.FC = () => {
-  // const location = useLocation();
-  // const navigate = useNavigate();
-  //
-  // useEffect(() => {
-  //   if (location.pathname === '/') navigate('/task');
-  // }, [location, navigate]);
-
   return (
     <main className={classes.content}>
       <Sidebar />
