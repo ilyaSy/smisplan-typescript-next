@@ -1,0 +1,28 @@
+[
+  {
+    "title": "Дата",
+    "type": "date",
+    "id": "date"
+  },
+  {
+    "title": "Время",
+    "type": "time",
+    "id": "time"
+  },
+  {
+    "title": "Описание",
+    "type": "string",
+    "id": "description"
+  },
+  {
+    "id": "specificParameters",
+    "hasEditMenu": false,
+    "hasDeleteButton": false,
+    "defaultSortField": "date",
+    "defaultSortDirection": "desc",
+    "hasTitleRow": false,
+    "hasDoneButton": false,
+    "hasAddMenu": false,
+    "hasSpecNotes": false
+  }
+]

@@ -17,7 +17,7 @@ import { useTableColumns } from './hooks/useTableColumns';
 import { useTableSourceData } from './hooks/useTableSourceData';
 import { useTablePrintRef } from './hooks/useTablePrintRef';
 import classes from './Table.module.scss';
-import './Table.css';
+// import './Table.css';
 
 type TTableProps = {
   data: TData[],

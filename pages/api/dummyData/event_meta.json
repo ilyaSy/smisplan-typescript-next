@@ -1,0 +1,212 @@
+[
+  {
+    "showInTable": true,
+    "isInlineEditable": false,
+    "isEditable": false,
+    "validValues": [
+      {
+        "text": "Не согласована",
+        "value": "new"
+      },
+      {
+        "text": "В работе",
+        "value": "work"
+      },
+      {
+        "text": "Выполнена",
+        "value": "done"
+      }
+    ],
+    "title": "Статус новый",
+    "isFilter": true,
+    "hasFullTextLink": false,
+    "tableIndex": 10,
+    "id": "status_new",
+    "type": "select",
+    "defaultValue": "new"
+  },
+  {
+    "showInTable": true,
+    "isInlineEditable": false,
+    "isEditable": false,
+    "validValues": "",
+    "title": "Время изменений",
+    "isFilter": true,
+    "hasFullTextLink": false,
+    "tableIndex": 11,
+    "id": "dt",
+    "type": "datetime",
+    "defaultValue": ""
+  },
+  {
+    "showInTable": false,
+    "isInlineEditable": false,
+    "isEditable": false,
+    "validValues": "",
+    "title": "Все изменения",
+    "isFilter": false,
+    "hasFullTextLink": false,
+    "tableIndex": 8,
+    "id": "change_all",
+    "type": "fulltext",
+    "defaultValue": ""
+  },
+  {
+    "showInTable": true,
+    "isInlineEditable": false,
+    "isEditable": false,
+    "validValues": {
+      "getDataUrl": "/smisplan-typescript/cgi/developer/"
+    },
+    "title": "Ответственный",
+    "isFilter": false,
+    "hasFullTextLink": false,
+    "tableIndex": 6,
+    "id": "developer",
+    "type": "select",
+    "defaultValue": ""
+  },
+  {
+    "showInTable": true,
+    "isInlineEditable": false,
+    "isEditable": false,
+    "validValues": "",
+    "title": "ID задачи",
+    "isFilter": false,
+    "hasFullTextLink": false,
+    "tableIndex": 3,
+    "id": "task_id",
+    "type": "number",
+    "defaultValue": ""
+  },
+  {
+    "showInTable": true,
+    "isInlineEditable": false,
+    "isEditable": false,
+    "validValues": [
+      {
+        "text": "Задачи",
+        "value": "task"
+      },
+      {
+        "text": "Обсуждения",
+        "value": "discussion"
+      }
+    ],
+    "title": "Таблица",
+    "isFilter": true,
+    "hasFullTextLink": false,
+    "tableIndex": 4,
+    "id": "mainTable",
+    "type": "select",
+    "defaultValue": "task"
+  },
+  {
+    "showInTable": true,
+    "isInlineEditable": false,
+    "isEditable": false,
+    "validValues": "",
+    "title": "Тема",
+    "isFilter": false,
+    "hasFullTextLink": true,
+    "tableIndex": 7,
+    "id": "theme",
+    "type": "string",
+    "defaultValue": ""
+  },
+  {
+    "showInTable": true,
+    "isInlineEditable": false,
+    "isEditable": false,
+    "validValues": {
+      "getDataUrl": "/smisplan-typescript/cgi/project/"
+    },
+    "title": "Проект",
+    "isFilter": false,
+    "hasFullTextLink": false,
+    "tableIndex": 5,
+    "id": "project",
+    "type": "select",
+    "defaultValue": "otdel"
+  },
+  {
+    "showInTable": true,
+    "isInlineEditable": false,
+    "isEditable": false,
+    "validValues": [
+      {
+        "text": "Добавление",
+        "value": "put"
+      },
+      {
+        "text": "Изменение",
+        "value": "upd"
+      },
+      {
+        "text": "Удаление",
+        "value": "del"
+      }
+    ],
+    "title": "Действие",
+    "isFilter": true,
+    "hasFullTextLink": false,
+    "tableIndex": 2,
+    "id": "event",
+    "type": "select",
+    "defaultValue": ""
+  },
+  {
+    "showInTable": false,
+    "isInlineEditable": false,
+    "isEditable": false,
+    "validValues": [
+      {
+        "text": "Не согласована",
+        "value": "new"
+      },
+      {
+        "text": "В работе",
+        "value": "work"
+      },
+      {
+        "text": "Выполнена",
+        "value": "done"
+      }
+    ],
+    "title": "Статус старый",
+    "isFilter": true,
+    "hasFullTextLink": false,
+    "tableIndex": 9,
+    "id": "status_old",
+    "type": "select",
+    "defaultValue": "new"
+  },
+  {
+    "showInTable": true,
+    "isInlineEditable": false,
+    "isEditable": false,
+    "validValues": "",
+    "title": "ID",
+    "isFilter": false,
+    "hasFullTextLink": false,
+    "tableIndex": 1,
+    "id": "id",
+    "type": "number",
+    "defaultValue": ""
+  },
+  {
+    "id": "specificParameters",
+    "defaultSortField": "dt",
+    "defaultSortDirection": "descend",
+    "tableName": "Изменения",
+    "hasTitleRow": false,
+    "hasAddMenu": true,
+    "hasSublistData": false,
+    "hasActionMenu": false,
+    "hasEditMenu": false,
+    "hasDeleteButton": false,
+    "hasSetStatusMenu": false,
+    "hasGoToDiscussion": false,
+    "hasDiscussion": false
+  }
+]

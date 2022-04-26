@@ -1,24 +1,26 @@
-import { Suspense, lazy, useEffect } from 'react';
-import { Routes, Route, useLocation, useNavigate } from 'react-router-dom';
-import SuspenseFallback from '../UI/SuspenseFallback';
+// import { Suspense, lazy, useEffect } from 'react';
+// import { Routes, Route, useLocation, useNavigate } from 'react-router-dom';
+// import SuspenseFallback from '../UI/SuspenseFallback';
+import DataTable from '../DataTable';
 import Sidebar from '../Sidebar';
 import classes from './Content.module.scss';
 
-const DataTable = lazy(() => import('../DataTable'));
-const DataCalendar = lazy(() => import('../DataCalendar'));
+// const DataTable = lazy(() => import('../DataTable'));
+// const DataCalendar = lazy(() => import('../DataCalendar'));
 
 const Content: React.FC = () => {
-  const location = useLocation();
-  const navigate = useNavigate();
-
-  useEffect(() => {
-    if (location.pathname === '/') navigate('/task');
-  }, [location, navigate]);
+  // const location = useLocation();
+  // const navigate = useNavigate();
+  //
+  // useEffect(() => {
+  //   if (location.pathname === '/') navigate('/task');
+  // }, [location, navigate]);
 
   return (
     <main className={classes.content}>
       <Sidebar />
-      <Routes >
+      <DataTable />
+      {/* <Routes >
         <Route path="calendar"
           element={
             <Suspense fallback={<SuspenseFallback type="loading" />}>
@@ -34,7 +36,7 @@ const Content: React.FC = () => {
             </Suspense>
           }
         />
-      </Routes >
+      </Routes > */}
     </main>
   );
 }

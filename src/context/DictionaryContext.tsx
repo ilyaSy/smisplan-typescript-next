@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useCallback, useContext, useMemo, useState } from "react";
+import { IChildren } from "../types/IChildren";
 import { TDictionary } from "../types/TDictionary";
 import { TDictionaryInfo } from "../types/TDictionaryInfo";
 import { TObject } from "../types/TObject";
@@ -31,7 +32,7 @@ export const useDictionaryContext = () => {
   return context;
 }
 
-export const DictionaryContextProvider: React.FC = ({children}) => {
+export const DictionaryContextProvider = ({ children }: IChildren) => {
   const [dict, setDict] = useState<IDictionaryContext["dictionary"]>({});
 
   const dictionary = useMemo(() => dict, [dict]);

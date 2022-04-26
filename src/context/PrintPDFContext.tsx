@@ -1,4 +1,5 @@
-import React, { useCallback, useContext, useMemo, useState } from "react";
+import React, { RefObject, useCallback, useContext, useMemo, useState } from "react";
+import { IChildren } from "../types/IChildren";
 
 export type TPrintMode = 'print' | 'all' | 'current' | undefined;
 
@@ -16,12 +17,12 @@ export const usePrintPDFContext = () => {
   return context;
 }
 
-export const PrintPDFContextProvider: React.FC = ({ children }) => {
+export const PrintPDFContextProvider = ({ children }: IChildren) => {
   const [printMode, setPrintMode] = useState<TPrintMode>();
   const [dataRef, setDataRef] = useState<React.RefObject<HTMLDivElement>>();
 
   const dataPrintRef = useMemo(() => dataRef, [dataRef]);
-  const setDataPrintRef = useCallback((refObject) => setDataRef(refObject), []);
+  const setDataPrintRef = useCallback((refObject: React.RefObject<HTMLDivElement>) => setDataRef(refObject), []);
 
   const dataPrintMode = useMemo(() => printMode, [printMode]);
   const setDataPrintMode = useCallback((mode: TPrintMode) => setPrintMode(mode), []);
