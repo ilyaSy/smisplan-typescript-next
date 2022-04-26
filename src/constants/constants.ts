@@ -11,7 +11,7 @@ export const DATE_FORMAT_FULLDATE = 'DD MMMM YYYY, dddd';
 export const DATE_FORMAT_DATE = 'YYYY-MM-DD';
 export const DATE_FORMAT_TIME = 'HH:mm';
 
-export const urlApi = '/smisplan-typescript/cgi';
+export const urlApi = '/api';
 export const TEST = true;
 
 export const PAGE_SIZE = 10;

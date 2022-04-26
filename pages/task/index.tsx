@@ -1,8 +1,4 @@
 import { NextPage } from "next";
-// import Head from "next/head";
-// import Image from "next/image";
-// import { BrowserRouter } from "react-router-dom";
-// import styles from '../../styles/Home.module.css';
 import { StorageProvider } from "../../src/storages/storage";
 import { UserContextProvider } from "../../src/context/UserContext";
 import { PrintPDFContextProvider } from "../../src/context/PrintPDFContext";
@@ -10,10 +6,6 @@ import { DictionaryContextProvider } from "../../src/context/DictionaryContext";
 import Header from "../../src/components/Header";
 import Content from "../../src/components/Content";
 import classes from '../../src/App.module.scss';
-
-// const basename: string = document.location.hostname === 'ilyasy.github.io'
-//   ? '/smisplan-typescript-next/'
-//   : '/';
 
 const TaskPage: NextPage = () => {
   return (
