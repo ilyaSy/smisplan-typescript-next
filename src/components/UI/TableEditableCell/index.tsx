@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form, Input, Tooltip } from 'antd';
+import { Form, Input, InputRef, Tooltip } from 'antd';
 import classes from './TableEditableCell.module.scss';
 
 interface Item {
@@ -11,7 +11,7 @@ interface Item {
 
 interface EditableCellProps {
   title: React.ReactNode;
-  inputRef: React.RefObject<Input>;
+  inputRef: React.RefObject<InputRef>;
   editing: boolean;
   editable: boolean;
   children: React.ReactNode;

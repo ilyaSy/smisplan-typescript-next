@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef, useContext } from 'react';
 import { useDispatch } from 'react-redux';
+import { InputRef } from 'antd';
 import { EditableContext } from '../UI/TableEditableRow';
 import { convertDataItem } from '../../utils/convertDataItem';
 import { useGetTablename } from '../../utils/hooks/useGetTablename';
@@ -39,8 +40,7 @@ const DataTableEditableCell: React.FC<EditableCellProps> = ({
   const tablename = useGetTablename();
 
   const [editing, setEditing] = useState(false);
-  // const inputRef = useRef<Input>(null);
-  const inputRef = useRef<HTMLInputElement>(null);
+  const inputRef = useRef<InputRef>(null);
   const form = useContext(EditableContext)!;
 
   const dispatch = useDispatch();

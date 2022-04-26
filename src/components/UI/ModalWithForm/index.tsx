@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { Modal, Form, Input, Button, DatePicker, TimePicker, Select, Checkbox } from 'antd';
+import type { ModalProps } from "antd/es/modal";
 import { useDictionaryContext } from '../../../context/DictionaryContext';
 import { IFormItem } from '../../../types/IFormItem';
 import { IModalWithForm } from '../../../types/IModalWithForm';
 import { convertDataItem } from '../../../utils/convertDataItem';
 import { TDictionary } from "../../../types/TDictionary";
+
+const _Modal = Modal as any as React.FC<ModalProps & { children: JSX.Element; }>;
 
 const ModalWithForm: React.FC<IModalWithForm> = ({
   title,
@@ -43,7 +46,7 @@ const ModalWithForm: React.FC<IModalWithForm> = ({
 
   return (
     isOpen ? (
-      <Modal
+      <_Modal
         title={title}
         visible={isOpen}
         onOk={onOk(handleOk)}
@@ -130,7 +133,7 @@ const ModalWithForm: React.FC<IModalWithForm> = ({
             ))
           }
         </Form>
-      </Modal>
+      </_Modal>
     ) : null
   );
 }

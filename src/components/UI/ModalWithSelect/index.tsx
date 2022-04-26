@@ -1,6 +1,9 @@
 import { useCallback, useMemo, useState } from 'react';
 import { Modal, Radio, RadioChangeEvent, Space } from 'antd';
+import type { ModalProps } from "antd/es/modal";
 import { TPrintMode } from '../../../context/PrintPDFContext';
+
+const _Modal = Modal as any as React.FC<ModalProps & { children: JSX.Element; }>;
 
 type TUseModalWithSelect = (
   title: string,
@@ -26,7 +29,7 @@ export const useModalWithSelect: TUseModalWithSelect = (title, list, onSubmit) =
   const handleClose = useCallback(() => handleToggle(false), [handleToggle]);
 
   const ModalPrintSelect = useMemo(() => (
-    <Modal
+    <_Modal
       title={title}
       onOk={handleSubmit}
       onCancel={handleClose}
@@ -42,7 +45,7 @@ export const useModalWithSelect: TUseModalWithSelect = (title, list, onSubmit) =
           }
         </Space>
       </Radio.Group>
-    </Modal>
+    </_Modal>
   ), [title, list, value, isOpen, handleClose, handleSubmit]);
 
   return {
